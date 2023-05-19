@@ -29,7 +29,7 @@ node{
              sh 'sudo docker push vishnuraja/job1_web'
             
             // sh 'docker push upasanatestdocker/mysql'
-             sh 'sudo docker push vishnuraja/mysql'
+            // sh 'sudo docker push vishnuraja/mysql'
           
     }
 }
