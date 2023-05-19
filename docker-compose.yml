@@ -5,6 +5,7 @@ services:
                context: ./php/online-shopping-system
                dockerfile: Dockerfile
        container_name: php_app
+       image: vishnuraja/job1_web
        volumes:
           - ./php/online-shopping-system:/var/www/html/
        depends_on: 
@@ -13,7 +14,7 @@ services:
          - 8008:80
   db:
           container_name: mysqli
-          image: mysql:latest
+          image: vishnuraja/mysql:latest
           command: --default-authentication-plugin=mysql_native_password
           restart: always  
           volumes:
